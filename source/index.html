@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="page-wrapper">
+      <div class="header__wrapper">
         <a class="header__logo" href="">
           <img
             class="header__logo-image"
@@ -75,107 +75,435 @@
       </div>
     </header>
     <main class="page-main">
-      <header class="page-main__header">
-        <h1 class="page-main__heading">
-          Hi 👋,<br />
-          My name is<br />
-          AndreyM<br />
-          I am a web developer
-        </h1>
+      <div class="page-main__wrapper">
+        <header class="page-main__header">
+          <h1 class="page-main__heading">
+            Hi 👋,<br />
+            My name is<br />
+            AndreyM<br />
+            I am a web developer
+          </h1>
 
-        <picture>
-          <img
-            class="page-main__profile picture"
-            width="349"
-            height="349"
-            src="#"
-            srcset=""
-            alt="Моё фото"
-          />
-        </picture>
-      </header>
+          <picture>
+            <img
+              class="page-main__profile picture"
+              width="349"
+              height="349"
+              src="#"
+              srcset=""
+              alt="Моё фото"
+            />
+          </picture>
+        </header>
 
-      <section class="page-main__section tech-stack">
-        <h2 class="page-main__section-heading">My Tech Stack</h2>
-        <p class="page-main__section-description">
-          Technologies I’ve been working with recently
-        </p>
+        <section class="page-main__section tech-stack">
+          <h2 class="page-main__section-heading">My Tech Stack</h2>
+          <p class="page-main__section-description">
+            Technologies I’ve been working with recently
+          </p>
 
-        <ul class="tech-stack__list">
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="93"
-              height="105"
-              src="images/html.svg"
-              alt="html"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="93"
-              height="105"
-              src="images/css.svg"
-              alt="css"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="105"
-              height="105"
-              src="images/js.svg"
-              alt="javascript"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="113"
-              height="101"
-              src="images/react.svg"
-              alt="react"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="117"
-              height="87"
-              src="images/sass.svg"
-              alt="sass"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="105"
-              height="105"
-              src="images/git.svg"
-              alt="git"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="98"
-              height="97"
-              src="images/vscode.svg"
-              alt="vscode"
-            />
-          </li>
-          <li class="techh-stack__list-item">
-            <img
-              class="techh-stack__list-image"
-              width="88"
-              height="88"
-              src="images/github.svg"
-              alt="github"
-            />
-          </li>
-        </ul>
-      </section>
+          <ul class="tech-stack__list">
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="93"
+                height="105"
+                src="images/html.svg"
+                alt="html"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="93"
+                height="105"
+                src="images/css.svg"
+                alt="css"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="105"
+                height="105"
+                src="images/js.svg"
+                alt="javascript"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="113"
+                height="101"
+                src="images/react.svg"
+                alt="react"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="117"
+                height="87"
+                src="images/sass.svg"
+                alt="sass"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="105"
+                height="105"
+                src="images/git.svg"
+                alt="git"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="98"
+                height="97"
+                src="images/vscode.svg"
+                alt="vscode"
+              />
+            </li>
+            <li class="techh-stack__list-item">
+              <img
+                class="techh-stack__list-image"
+                width="88"
+                height="88"
+                src="images/github.svg"
+                alt="github"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section class="page-main__section projects">
+          <h2 class="page-main__section-heading">Projects</h2>
+          <p class="page-main__section-description">Things I’ve built so far</p>
+
+          <ul class="projects__list">
+            <li class="projects__list-item">
+              <article class="projects__card project-card">
+                <h3 class="project-card__heading">Project Tile goes here</h3>
+                <picture>
+                  <img
+                    class="project-card__image"
+                    src="#"
+                    srcset=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="project-card__description">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </p>
+
+                <p class="project-card__tech-stack">
+                  <span class="project-card__tech-stack-heading">
+                    Tech stack:
+                  </span>
+                  HTML , JavaScript, SASS, React
+                </p>
+
+                <p class="project-card__links">
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#link"></use>
+                    </svg>
+                    <span class="project-card__link-name">Live Preview</span>
+                  </a>
+
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#gh"></use>
+                    </svg>
+                    <span class="project-card__link-name">View Code</span>
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li class="projects__list-item">
+              <article class="projects__card project-card">
+                <h3 class="project-card__heading">Project Tile goes here</h3>
+                <picture>
+                  <img
+                    class="project-card__image"
+                    src="#"
+                    srcset=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="project-card__description">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </p>
+
+                <p class="project-card__tech-stack">
+                  <span class="project-card__tech-stack-heading">
+                    Tech stack:
+                  </span>
+                  HTML , JavaScript, SASS, React
+                </p>
+
+                <p class="project-card__links">
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#link"></use>
+                    </svg>
+                    <span class="project-card__link-name">Live Preview</span>
+                  </a>
+
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#gh"></use>
+                    </svg>
+                    <span class="project-card__link-name">View Code</span>
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li class="projects__list-item">
+              <article class="projects__card project-card">
+                <h3 class="project-card__heading">Project Tile goes here</h3>
+                <picture>
+                  <img
+                    class="project-card__image"
+                    src="#"
+                    srcset=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="project-card__description">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </p>
+
+                <p class="project-card__tech-stack">
+                  <span class="project-card__tech-stack-heading">
+                    Tech stack:
+                  </span>
+                  HTML , JavaScript, SASS, React
+                </p>
+
+                <p class="project-card__links">
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#link"></use>
+                    </svg>
+                    <span class="project-card__link-name">Live Preview</span>
+                  </a>
+
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#gh"></use>
+                    </svg>
+                    <span class="project-card__link-name">View Code</span>
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li class="projects__list-item">
+              <article class="projects__card project-card">
+                <h3 class="project-card__heading">Project Tile goes here</h3>
+                <picture>
+                  <img
+                    class="project-card__image"
+                    src="#"
+                    srcset=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="project-card__description">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </p>
+
+                <p class="project-card__tech-stack">
+                  <span class="project-card__tech-stack-heading">
+                    Tech stack:
+                  </span>
+                  HTML , JavaScript, SASS, React
+                </p>
+
+                <p class="project-card__links">
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#link"></use>
+                    </svg>
+                    <span class="project-card__link-name">Live Preview</span>
+                  </a>
+
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#gh"></use>
+                    </svg>
+                    <span class="project-card__link-name">View Code</span>
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li class="projects__list-item">
+              <article class="projects__card project-card">
+                <h3 class="project-card__heading">Project Tile goes here</h3>
+                <picture>
+                  <img
+                    class="project-card__image"
+                    src="#"
+                    srcset=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="project-card__description">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </p>
+
+                <p class="project-card__tech-stack">
+                  <span class="project-card__tech-stack-heading">
+                    Tech stack:
+                  </span>
+                  HTML , JavaScript, SASS, React
+                </p>
+
+                <p class="project-card__links">
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#link"></use>
+                    </svg>
+                    <span class="project-card__link-name">Live Preview</span>
+                  </a>
+
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#gh"></use>
+                    </svg>
+                    <span class="project-card__link-name">View Code</span>
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li class="projects__list-item">
+              <article class="projects__card project-card">
+                <h3 class="project-card__heading">Project Tile goes here</h3>
+                <picture>
+                  <img
+                    class="project-card__image"
+                    src="#"
+                    srcset=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="project-card__description">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </p>
+
+                <p class="project-card__tech-stack">
+                  <span class="project-card__tech-stack-heading">
+                    Tech stack:
+                  </span>
+                  HTML , JavaScript, SASS, React
+                </p>
+
+                <p class="project-card__links">
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#link"></use>
+                    </svg>
+                    <span class="project-card__link-name">Live Preview</span>
+                  </a>
+
+                  <a class="project-card__link" href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="icons/stack.svg#gh"></use>
+                    </svg>
+                    <span class="project-card__link-name">View Code</span>
+                  </a>
+                </p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer"></footer>
   </body>
